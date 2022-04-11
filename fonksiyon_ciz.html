@@ -1,0 +1,21 @@
+<html>
+<head>
+<script>
+
+function ciz()
+{
+adet=parseInt(document.f.adet.value);
+sat=parseInt(document.f.satır.value);
+for(i=1;i<=adet;i++)
+document.write("<img src='fb.png' style='position:relative;top:"+sat+";'>");
+}
+</script></head>
+<body>
+<form name="f">
+Kaç Çizgi:<input type="text" name="adet"><br>
+Satır:<input type="text" name="satır"><br>
+<input type="button" value="Çiz" onclick="ciz()"><br>
+</form>
+</body>
+</html>
+

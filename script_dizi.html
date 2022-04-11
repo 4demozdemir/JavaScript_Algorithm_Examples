@@ -1,0 +1,23 @@
+<html>
+<head>		<script>
+		var ekran =  new Array(); var i=0;var sayac=0;
+
+	function yaz(event)
+	{	var x=event.clientX;var y=event.clientY;
+	ekran[i]=x;	ekran[i+1]=y;i+=2;
+	sayac+=2;
+ 	}
+	function tablo()
+	{
+	document.write("<body bgcolor='black'>");	
+	for(i=0;i<sayac;i+=2)
+	
+	document.write("<img src='adam.gif' width=100 height=150 	style='position:absolute;top:"+ekran[i+1]+";left:"+ekran[i]+";'>");
+	}
+	</script> 
+</head>
+<body bgcolor="black" topmargin=0 leftmargin=0 onclick="yaz(event)">
+<form method="POST"  name="form">
+<input type="button" onclick="tablo()" value="Listele"><br>
+</form></body></html>
+

@@ -1,0 +1,24 @@
+
+<html>
+<head>
+
+
+<script type="text/javascript">
+function koordinat(event)
+{
+var x=event.clientX;
+var y=event.clientY;
+document.f.x.value=x;
+document.f.y.value=y;
+}
+</script>
+</head>
+<body ondblclick="koordinat(event)">
+<form name="f">
+X<input type="text" name="x"><br>
+Y<input type="text" name="y">
+<input type="submit" value="kaydet">
+</form>
+</body>
+</html>
+

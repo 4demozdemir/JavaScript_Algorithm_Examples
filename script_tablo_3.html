@@ -1,0 +1,25 @@
+<html>
+<head>
+	<script>
+	function tablo()
+	{
+
+
+	sat=parseInt(document.form.sat.value);
+	sut=parseInt(document.form.sut.value);
+	document.write("<table border='1' cellspacing=5 cellpadding=5>");
+		for(i=1;i<=sat;i++)
+		{
+		document.write("<tr>");
+			for(j=1;j<=sut;j++)
+				document.write("<td>"+i+"-"+j+"</td>");
+		}
+		document.write("</tr>");
+	}
+	</script> </head><body>
+<form method="POST" name="form">
+Satýr sayýsý<input type="text" name="sat" maxlength="20" size="20">
+Sütun sayýsý<input type="text" name="sut" maxlength="20" size="20"><br>
+<input type="button" onclick="tablo()" value="Gönder"><br>
+</form></body></html>
+

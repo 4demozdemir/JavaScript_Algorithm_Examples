@@ -1,0 +1,30 @@
+<html>
+<head>		<script>
+	var ekran =  new Array(); var i=0;var sayac=0;
+	function yaz(event)
+	{
+	
+	var x=event.clientX;
+	var y=event.clientY;
+	ekran[i]=x;
+	ekran[i+1]=y;
+	i+=2;
+	sayac+=2;
+	}
+	function tablo()
+	{
+	for(i=0;i<sayac;i+=2)
+	/*document.write((i+1)+"-->"+ekran[i]+"-"+ekran[i+1]+"<br>");*/
+	document.write("<img src='nokta.png><br>")
+/*	width=100 height=150 
+style='position:absolute;top:"+ekran[i+1]+";left:"+ekran[i]+";' 
+title="+ekran[i]+"-"+ekran[i+1]+">";*/
+	}
+	
+	</script>
+</head>
+<body onclick="yaz(event)">
+<form method="POST"  name="form">
+<input type="button" onclick="tablo()" value="Gönder"><br>
+</form></body></html>
+

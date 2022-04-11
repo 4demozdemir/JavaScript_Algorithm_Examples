@@ -1,0 +1,24 @@
+<html>
+<head>
+		<script type="text/javascript">
+		
+		
+	function fakt()
+	{
+	f=1;
+	s=parseInt(document.frm.s.value);
+		for(k=1;k<=s;k++)
+		f=f*k;
+		document.frm.ort.value=f;
+		
+	}	
+	</script>
+</head>
+<body><center>
+<form method="POST" name="frm">
+Sayı gir<input type="text" name="s" maxlength="20" size="20">
+Faktöryeli <input type="text" name="ort" maxlength="20" size="20"><br><br>
+<input type="button" onclick="fakt()" value="Hesaplama">
+</form></body></html>
+
+ 

@@ -1,0 +1,30 @@
+<html>
+<head>
+		<script type="text/javascript">
+
+		
+	function toplam()
+	{
+	v=parseInt(document.frm.v.value);
+	f=parseInt(document.frm.f.value);
+	toplam=v+f;
+	document.frm.ort.value=toplam;
+	}	
+	function carpma()
+	{
+	v=parseInt(document.frm.v.value);
+	f=parseInt(document.frm.f.value);
+	carp=v*f;
+	document.frm.ort.value=carp;
+	}	
+	</script></head>
+<body><center>
+<form method="POST" name="frm">
+Vize<input type="text" name="v" maxlength="20" size="20">
+Final <input type="text" name="f" maxlength="20" size="40"><br><br>
+Sonuç<input type="text" name="ort" maxlength="20" size="20"><br><br>
+<input type="button" onclick="toplam()" value="Toplama">
+<input type="button" onclick="carpma()" value="Çarpma">
+</form></body></html>
+
+ 
